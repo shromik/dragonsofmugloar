@@ -1,0 +1,370 @@
+{
+  "logs": [
+    {
+      "logObject": {
+        "gameId": 6118389,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 8273023,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 5406172,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 7216681,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 3673967,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 5966996,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 2554025,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 3047885,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 4940731,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 4107641,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 4156294,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 5381622,
+        "weather": "SRO",
+        "gameResult": "Victory"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 733524,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 30342,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 8801317,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 3816427,
+        "weather": "FUNDEFINEDG",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 2287848,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 7615373,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 9252316,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 8717940,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 7179863,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 6554287,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 999184,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 8799952,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 7318290,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 5616777,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 4102007,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 68599,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 5816992,
+        "weather": "FUNDEFINEDG",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 8601946,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 1411975,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 7663261,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 7882099,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 1826987,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 2506982,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 4358717,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 2531509,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 5256858,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 9481549,
+        "weather": "FUNDEFINEDG",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 6682731,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 6330494,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 3878921,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 3190384,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 8125308,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 3627922,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 2683898,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 4446521,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 597943,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 1046089,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 4417478,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 8681448,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    },
+    {
+      "logObject": {
+        "gameId": 6609966,
+        "weather": "NMR",
+        "gameResult": "Defeat"
+      }
+    }
+  ],
+  "totalGames": 204,
+  "victories": 7
+}
