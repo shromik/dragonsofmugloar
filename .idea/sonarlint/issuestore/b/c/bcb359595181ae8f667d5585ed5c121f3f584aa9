@@ -1,0 +1,14 @@
+
+Ssquid:S1854"8Remove this useless assignment to local variable "json".(º¢ÖS8ÃËï¯»,
+vsquid:S3008"URename this field "Vinno_Read" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£¥ıÓøÿÿÿÿ8ù®›º,
+Rsquid:S1444"1Make this "public static linststring" field final(ËÎšÚøÿÿÿÿ8ù®›º,
+Wsquid:S2696"6Make the enclosing method "static" or remove this set.(—íÂğúÿÿÿÿ8¬ØõØ»,
+zsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(—íÂğúÿÿÿÿ8¬ØõØ»,
+"squid:ClassVariableVisibilityCheck"VMake Vinno_Read a static final constant or non-public and provide accessors if needed.(£¥ıÓøÿÿÿÿ8ù®›º,
+"squid:ClassVariableVisibilityCheck"WMake linststring a static final constant or non-public and provide accessors if needed.(ËÎšÚøÿÿÿÿ8ù®›º,
+Xsquid:S1854"<Remove this useless assignment to local variable "iterator".(„äûÙ8™™ì×»,
+Qsquid:S1444"0Make this "public static Vinno_Read" field final(£¥ıÓøÿÿÿÿ8ù®›º,
+Gsquid:S2386"&Make member "linststring" "protected".(—íÂğúÿÿÿÿ8¬ØõØ»,
+Osquid:S2095".Close this "FileWriter" in a "finally" clause.(³ÛÑÙÿÿÿÿÿ8ù®›º,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ù®›º,
+Dsquid:S1481")Remove this unused "json" local variable.(º¢ÖS8ÃËï¯»,

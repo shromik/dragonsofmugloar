@@ -1,0 +1,27 @@
+
+9
+	readme.md,2/7/275d783e298228506068436512433d343feb52aa
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+`
+0src/main/java/com/mugloar/result/GameResult.java,7/a/7a17aa9dc276d53e53b952c934b19dcbb4b65ce3
+Z
+*src/main/java/com/mugloar/game/Knight.java,8/d/8df3bc5145fde31c9dca9a3a247695491a1c38a3
+X
+(src/main/java/com/mugloar/game/Game.java,c/9/c97c35328387c61a30f78f04f28372514065a9bd
+]
+-src/main/java/com/mugloar/dragons/Dragon.java,a/a/aa46182895507ecfae2185b17a9f58351dc20269
+^
+.src/main/java/com/mugloar/dragons/Dragon_.java,9/b/9b6617f70c5734b62a1b06a16a322338c36ef3ce
+c
+3src/main/java/com/mugloar/result/GameLogObject.java,e/9/e983a67dc73c8775c9f0f8d64aad9f1f361c2de3
+]
+-src/main/java/com/mugloar/core/StartGame.java,e/3/e3fc7a9d5d114b54ef3dcff7224ae2a743d68749
+]
+-src/main/java/com/mugloar/result/GameLog.java,5/c/5c70348f0587252aa851a1b2872f48509d75bf24
+8
+log.json,1/5/1582b733314559f915b44ed02b6cb8a56283a523
+Z
+*src/main/java/com/mugloar/result/Logs.java,9/5/95a85a5d02196980f411966dcd55362a7f9cae17
+^
+.src/main/java/com/mugloar/core/GameLogger.java,b/c/bcb359595181ae8f667d5585ed5c121f3f584aa9

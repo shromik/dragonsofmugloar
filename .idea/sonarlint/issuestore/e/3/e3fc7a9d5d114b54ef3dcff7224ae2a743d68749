@@ -1,0 +1,32 @@
+
+"squid:ClassVariableVisibilityCheck"WMake linststring a static final constant or non-public and provide accessors if needed.(ËÎšÚøÿÿÿÿ8õÇÆØ»,
+Wsquid:S2696"6Make the enclosing method "static" or remove this set.(Í‚ˆõıÿÿÿÿ8·¨ÙÑ»,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÕÂĞØ»,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(øŒ¼Æ8Éâç™º,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ê¹¾8ŞçÙ»,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(ïÿ–œøÿÿÿÿ8Ê±·šº,
+Isquid:S1481"(Remove this unused "msg" local variable.(æè¡éøÿÿÿÿ8š¦äØ»,
+Wsquid:S2696"6Make the enclosing method "static" or remove this set.(—íÂğúÿÿÿÿ8õÇÆØ»,
+Z"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(‘Š’üÿÿÿÿ8«Á“”Â,
+Rsquid:S2696"6Make the enclosing method "static" or remove this set.(¬¥‡Ş8Éâç™º,
+zsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(—íÂğúÿÿÿÿ8õÇÆØ»,
+Rsquid:S1444"1Make this "public static linststring" field final(ËÎšÚøÿÿÿÿ8õÇÆØ»,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(¶ƒ—ã8«²ÉØ»,
+Fsquid:S1068"*Remove this unused "skills" private field.(ıß‘·8Ø„É¿Â,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(÷¿ğæıÿÿÿÿ8öİïÑ»,
+isquid:S2259"HA "NullPointerException" could be thrown; "jsonObject" is nullable here.(æè¡éøÿÿÿÿ8ÕÂĞØ»,
+tsquid:S00116"RRename this field "dragon_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éşğşÿÿÿÿ8Éâç™º,
+Xsquid:S1854"7Remove this useless assignment to local variable "msg".(æè¡éøÿÿÿÿ8š¦äØ»,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(µÚãÛ8´Û‚Ù»,
+Rsquid:S2696"6Make the enclosing method "static" or remove this set.(¬¥‡Ş8Éâç™º,
+]squid:UselessImportCheck"4Remove this unused import 'java.lang.reflect.Array'.(‡¡É˜8ã¡ü·Â,
+Z"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(€ä©ÿÿÿÿÿ8˜ÑÔÂ,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(éÅŒ”8üÁ­”Â,
+Gsquid:S2386"&Make member "linststring" "protected".(—íÂğúÿÿÿÿ8õÇÆØ»,

@@ -1,0 +1,10 @@
+com/mugloar/dragons/Dragon.class
+com/mugloar/dragons/Dragon_.class
+com/mugloar/core/GameLogger.class
+com/mugloar/result/GameLog.class
+com/mugloar/result/GameLogObject.class
+com/mugloar/result/GameResult.class
+com/mugloar/result/Logs.class
+com/mugloar/game/Game.class
+com/mugloar/core/StartGame.class
+com/mugloar/game/Knight.class

@@ -1,60 +1,52 @@
 package com.mugloar.core;
 
 import com.google.gson.*;
-import com.google.gson.stream.JsonReader;
 import com.mugloar.dragons.Dragon;
 import com.mugloar.dragons.Dragon_;
 import com.mugloar.game.Game;
 import com.mugloar.result.GameLog;
 import com.mugloar.result.GameResult;
 import com.mugloar.result.GameLogObject;
-import com.mugloar.result.Logs;
 import io.restassured.RestAssured;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 import static io.restassured.RestAssured.*;
 
 public class StartGame {
-    private Game game;
-    private Dragon dragon;
-    private Dragon_ dragon_;
-    private GameResult gameResult;
-    private GameLog log;
-    private GameLogObject gameLog;
-    private String weather;
+    public Game game;
+    public Dragon dragon;
+    public Dragon_ dragon_;
+    public GameResult gameResult;
+    public GameLog log;
+    public GameLogObject gameLog;
+    public String weather;
+    public HashMap<String, String> skillMap;
 
     private GameLogger logger;
     public static List<String> linststring;
 
     Gson builder = new GsonBuilder().setPrettyPrinting().create();
 
-    StartGame(){
+    public StartGame(){
         dragon = new Dragon();
         dragon_ = new Dragon_();
         gameLog = new GameLogObject();
         log = new GameLog();
         logger = new GameLogger();
+
+        skillMap = new HashMap<>();
+
+        skillMap.put("armor", "claw");
+        skillMap.put("attack", "scale");
+        skillMap.put("agility", "wing");
+        skillMap.put("endurance", "fire");
     }
 
     public static void main(String[] args){
         StartGame startGame = new StartGame();
-
-        /*startGame
-                .getGame()
-                .sendDragon()
-                .logger.logGame(
-                        startGame.log.setLogObject(
-                                startGame.gameLog
-                                    .setDragon(startGame.dragon)
-                                    .setGame(startGame.game)
-                                    .setGameResult(startGame.gameResult)
-
-                        )
-        );*/
 
         int nrOfGames;
 
@@ -66,21 +58,16 @@ public class StartGame {
 
             switch (startGame.weather){
                 case "NMR":
-                    startGame.createDragon(
-                            startGame.game.getKnight().getAttack()-1,
-                            startGame.game.getKnight().getArmor()+2,
-                            startGame.game.getKnight().getAgility()-1,
-                            startGame.game.getKnight().getEndurance()
-                    );
+                    startGame.createDragon();
                     break;
                 case "T E":
                     startGame.createDragon(5,5,5,5);
                     break;
                 case "HVA":
-                    startGame.createDragon(10,10, 0, 0);
+                    startGame.createDragon(5,10, 5, 0);
                     break;
                 case "FUNDEFINEDG":
-                    startGame.createDragon(0,15, 5, 0);
+                    startGame.createDragon(5,5, 5, 5);
                     break;
                 default:
                     break;
@@ -101,7 +88,7 @@ public class StartGame {
         startGame.getGameStats();
     }
 
-    private Dragon_ createDragon(int scale, int claw, int wing, int fire){
+    public Dragon createDragon(int scale, int claw, int wing, int fire){
         dragon_.setClawSharpness(claw)
                 .setFireBreath(fire)
                 .setScaleThickness(scale)
@@ -109,22 +96,71 @@ public class StartGame {
 
         dragon.setDragon(dragon_);
 
-        return dragon_;
+        return dragon;
+    }
+
+    public Dragon createDragon(){
+        Map<String, Integer> map = new HashMap<>();
+        map.put("armor", game.getKnight().getArmor());
+        map.put("attack", game.getKnight().getAttack());
+        map.put("agility", game.getKnight().getAgility());
+        map.put("endurance", game.getKnight().getEndurance());
+
+        Map<String, Integer> sortedMap = map.entrySet()
+                .stream().sorted(
+                        Map.Entry.comparingByValue())
+                .collect(
+                        Collectors
+                                .toMap(
+                                        Map.Entry::getKey, Map.Entry::getValue,(oldValue, newValue) -> oldValue, LinkedHashMap::new)
+                );
+
+        int count = 0;
+
+        for(Map.Entry<String, Integer> entry : sortedMap.entrySet()) {
+            String key = entry.getKey();
+            int value = entry.getValue();
+
+            switch (count) {
+                case 0:
+                    setDragonSkill(skillMap.get(key),value);
+                    break;
+                case 1:
+                    setDragonSkill(skillMap.get(key), value - 1);
+                    break;
+                case 2:
+                    setDragonSkill(skillMap.get(key), value - 1);
+                    break;
+                case 3:
+                    setDragonSkill(skillMap.get(key), value + 2);
+                    break;
+                default:
+                    break;
+            }
+
+            count++;
+        }
+
+        return dragon.setDragon(dragon_);
     }
 
     private StartGame getGame(){
         RestAssured.baseURI = "http://www.dragonsofmugloar.com/api/game";
-        game = get("/").as(Game.class);
+        game = given()
+                .log().all()
+                .get("/")
+                .as(Game.class);
 
         System.out.println(builder.toJson(game));
+
         return this;
     }
 
     private StartGame sendDragon(){
         RestAssured.baseURI = "http://www.dragonsofmugloar.com/api/game";
-        String json = builder.toJson(dragon_);
+        String json = builder.toJson(dragon);
         System.out.println(json);
-        gameResult =  given()
+        gameResult =  given().log().all().contentType("application/json")
                     .body(json)
                 .when()
                     .put(game.getGameId()+"/solution")
@@ -137,7 +173,7 @@ public class StartGame {
 
     private StartGame getWeather(){
         RestAssured.baseURI = "http://www.dragonsofmugloar.com/weather/api/report/";
-        weather = given()
+        weather = given().log().all()
                 .get(game.getGameId().toString())
                 .xmlPath()
                 .getString("report.code");
@@ -155,10 +191,6 @@ public class StartGame {
             e.printStackTrace();
         }
 
-        JsonObject jsonObject = (JsonObject) obj;
-        linststring = new ArrayList<String>();
-        JsonArray msg = (JsonArray) jsonObject.get("logs");
-
         float victories = ((JsonObject) obj).get("victories").getAsFloat();
         float totalGames = ((JsonObject) obj).get("totalGames").getAsFloat();
         float percentage = (victories/totalGames)*100.0f;
@@ -169,5 +201,25 @@ public class StartGame {
         return this;
     }
 
+    private Dragon_ setDragonSkill(String stat, int value){
 
+        switch (stat) {
+            case "claw":
+                dragon_.setClawSharpness(value);
+                break;
+            case "scale":
+                dragon_.setScaleThickness(value);
+                break;
+            case "wing":
+                dragon_.setWingStrength(value);
+                break;
+            case "fire":
+                dragon_.setFireBreath(value);
+                break;
+            default:
+                break;
+        }
+
+        return dragon_;
+    }
 }
